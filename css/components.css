@@ -1,0 +1,35 @@
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.button {
+  padding: 13px 26px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition:
+    filter var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.button:hover {
+  filter: brightness(1.06);
+}
+
+.button-primary {
+  color: var(--bg-deep);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--gold-soft),
+      var(--gold)
+    );
+}

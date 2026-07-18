@@ -45,6 +45,7 @@ select,input{
   background:var(--bg-deep); border:1px solid var(--line);
   border-radius:10px; padding:11px 10px; width:100%;
 }
+/*
 button{
   font-family:'Space Mono',monospace; font-size:12px;
   letter-spacing:.08em; text-transform:uppercase; color:var(--bg-deep);
@@ -52,6 +53,7 @@ button{
   border:none; border-radius:999px; padding:13px 26px; cursor:pointer;
 }
 button:hover{ filter:brightness(1.06); }
+*/
 .error{ font-size:13px; color:#e2693c; min-height:16px; margin:2px 0 0; }
 
 /* ── Result panel ── */
