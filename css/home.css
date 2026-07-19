@@ -139,6 +139,116 @@
   color: var(--gold);
 }
 
+/* ========================================
+   Homepage — How Ordinate Works
+======================================== */
+
+.home-how {
+  padding: 120px 32px;
+}
+
+.home-how-inner {
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.home-how .home-section-intro {
+  max-width: 680px;
+  margin-bottom: 64px;
+}
+
+.home-how-intro {
+  max-width: 560px;
+  margin: 28px auto 0;
+
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.home-cycle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-cycle-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 300px;
+  padding: 32px;
+
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.home-cycle-number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
+.home-cycle-card h3 {
+  margin: 48px 0 0;
+
+  color: var(--text);
+
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.home-cycle-card p {
+  margin: 16px 0 0;
+
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.home-cycle-link {
+  margin-top: auto;
+  padding-top: 28px;
+
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.home-cycle-link:hover {
+  color: var(--text);
+}
+
+.home-how-result {
+  max-width: 680px;
+  margin: 64px auto 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.home-how-result strong {
+  color: var(--text);
+
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
 @media (max-width: 760px) {
 
   .home-tools {
@@ -151,6 +261,14 @@
 
   .home-tool-card {
     min-height: auto;
+  }
+
+  .home-how {
+    padding: 72px 20px;
+  }
+
+  .home-cycle-grid {
+    grid-template-columns: 1fr;
   }
 
 }
