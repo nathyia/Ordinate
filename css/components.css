@@ -178,6 +178,21 @@ textarea {
   color: var(--text);
 }
 /* ========================================
+   Site Shell
+======================================== */
+
+.site-shell {
+  width: 100%;
+  max-width: var(--content-wide);
+  min-height: 100vh;
+  margin: 0 auto;
+
+  background: var(--bg);
+
+  border-left: 1px solid var(--site-frame-line);
+  border-right: 1px solid var(--site-frame-line);
+}
+/* ========================================
    Site Footer
 ======================================== */
 
@@ -238,8 +253,6 @@ textarea {
 
 .site-footer-bottom {
   width: 100%;
-  max-width: var(--content-wide);
-  margin: 0 auto;
 
   padding: 20px 32px;
 
@@ -255,4 +268,33 @@ textarea {
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+/* ========================================
+   Basic Mobile Protection
+======================================== */
+
+@media (max-width: 760px) {
+
+  .site-header-inner {
+    padding: 20px 20px;
+  }
+
+  .site-nav {
+    gap: 14px;
+  }
+
+  .site-nav a {
+    font-size: 9px;
+  }
+  
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .site-footer-nav {
+    align-items: flex-start;
+  }
+
 }

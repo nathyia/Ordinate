@@ -11,6 +11,9 @@
   --bg-deep: #15121f;
   --surface: #2a2438;
 
+  --site-outer: var(--surface);
+  --site-frame-line: rgba(212, 168, 87, 0.55);
+
   --line: rgba(212, 168, 87, 0.18);
 
   --gold: #d4a857;
@@ -82,6 +85,9 @@ html {
 
 body {
   margin: 0;
+
+  background: var(--site-outer);
+
 }
 
 
