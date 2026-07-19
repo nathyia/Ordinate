@@ -31,7 +31,15 @@
   font-size: 18px;
   line-height: 1.6;
 }
+
 .home-hero .button {
   display: inline-block;
   margin-top: 36px;
+}
+
+.home-logo {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  margin: 24px auto 0;
 }

@@ -149,9 +149,16 @@ textarea {
   color: var(--text);
   text-decoration: none;
 
-  font-family: var(--font-display);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
   font-size: 24px;
-  font-weight: 600;
+}
+
+.site-logo img {
+  display: block;
+  width: 34px;
+  height: 34px;
 }
 
 .site-nav {
@@ -286,7 +293,7 @@ textarea {
   .site-nav a {
     font-size: 9px;
   }
-  
+
   .site-footer-inner {
     flex-direction: column;
     align-items: flex-start;
