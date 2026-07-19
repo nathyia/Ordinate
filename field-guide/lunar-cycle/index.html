@@ -1,1 +1,450 @@
-<h1>Coming Soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Lunar Cycle — Ordinate</title>
+
+  <link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/lunar-cycle.css">
+
+</head>
+
+<body>
+
+  <div class="site-shell">
+
+    <header class="site-header">
+
+      <div class="site-header-inner">
+
+        <a href="/" class="site-logo" aria-label="Ordinate home">
+  <img
+    src="../../assets/logo/concept1_orbital_seal.svg"
+    alt=""
+  >
+</a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+
+          <a href="/type/">
+            Find Your Ordinate
+          </a>
+
+          <a href="/compatibility/">
+            Co-Ordinate
+          </a>
+
+          <a href="/forecast/">
+            Cosmic Forecast
+          </a>
+
+          <a href="/field-guide/">
+            Field Guide
+          </a>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+
+    <main>
+
+  <section class="lunar-hero">
+
+    <div class="lunar-hero-inner">
+
+      <p class="eyebrow">
+        The Lunar Cycle
+      </p>
+
+      <h1>
+        Four phases of becoming.
+      </h1>
+
+      <p>
+        The Moon's synodic cycle provides one of the two axes of Ordinate. Its four phases describe a repeating rhythm of emergence, growth, fullness, and release.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="lunar-phases">
+
+    <div class="lunar-phases-inner">
+
+      <div class="lunar-phase-grid">
+
+
+        <button
+          class="lunar-phase-card"
+          type="button"
+          data-phase="new-moon"
+        >
+
+          <span class="lunar-phase-number">
+            01
+          </span>
+
+          <span class="lunar-phase-symbol">
+            ●
+          </span>
+
+          <span class="lunar-phase-name">
+            New Moon
+          </span>
+
+          <span class="lunar-phase-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="lunar-phase-card"
+          type="button"
+          data-phase="waxing-moon"
+        >
+
+          <span class="lunar-phase-number">
+            02
+          </span>
+
+          <span class="lunar-phase-symbol">
+            ◐
+          </span>
+
+          <span class="lunar-phase-name">
+            Waxing Moon
+          </span>
+
+          <span class="lunar-phase-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="lunar-phase-card"
+          type="button"
+          data-phase="full-moon"
+        >
+
+          <span class="lunar-phase-number">
+            03
+          </span>
+
+          <span class="lunar-phase-symbol">
+            ○
+          </span>
+
+          <span class="lunar-phase-name">
+            Full Moon
+          </span>
+
+          <span class="lunar-phase-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="lunar-phase-card"
+          type="button"
+          data-phase="waning-moon"
+        >
+
+          <span class="lunar-phase-number">
+            04
+          </span>
+
+          <span class="lunar-phase-symbol">
+            ◑
+          </span>
+
+          <span class="lunar-phase-name">
+            Waning Moon
+          </span>
+
+          <span class="lunar-phase-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div
+    class="lunar-overlay"
+    id="lunarOverlay"
+    hidden
+  >
+
+    <div
+      class="lunar-overlay-backdrop"
+      data-close-lunar
+    ></div>
+
+
+    <article
+      class="lunar-expanded-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lunarExpandedName"
+    >
+
+      <button
+        class="lunar-close"
+        type="button"
+        aria-label="Close lunar phase information"
+        data-close-lunar
+      >
+        ×
+      </button>
+
+
+      <p
+        class="eyebrow"
+        id="lunarExpandedNumber"
+      ></p>
+
+
+      <div
+        class="lunar-expanded-symbol"
+        id="lunarExpandedSymbol"
+      ></div>
+
+
+      <h2
+        id="lunarExpandedName"
+      ></h2>
+
+
+      <p
+        id="lunarExpandedDescription"
+      ></p>
+
+
+      <button
+        class="lunar-return"
+        type="button"
+        data-close-lunar
+      >
+        ← Return to the Lunar Cycle
+      </button>
+
+    </article>
+
+  </div>
+
+</main>
+
+
+    <footer class="site-footer">
+  <div class="site-footer-inner">
+
+    <div class="site-footer-brand">
+
+      <a href="/" class="site-logo">
+        Ordinate
+      </a>
+
+      <p>
+        Mark your place in the cycle.
+      </p>
+
+    </div>
+
+    <nav class="site-footer-nav" aria-label="Footer navigation">
+
+      <a href="/type/">Find Your Ordinate</a>
+
+      <a href="/compatibility/">Co-Ordinate</a>
+
+      <a href="/forecast/">Cosmic Forecast</a>
+
+      <a href="/field-guide/">Field Guide</a>
+
+      <a href="/about/">About</a>
+
+    </nav>
+
+  </div>
+
+  <div class="site-footer-bottom">
+
+    <p>
+      © 2026 Ordinate
+    </p>
+
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+
+  const lunarData = {
+
+    "new-moon": {
+      number: "01 — NEW MOON",
+      symbol: "●",
+      name: "New Moon",
+      description:
+        "The New Moon marks the beginning of the lunar cycle. It represents emergence, inward orientation, and the quiet potential from which a new cycle begins."
+    },
+
+    "waxing-moon": {
+      number: "02 — WAXING MOON",
+      symbol: "◐",
+      name: "Waxing Moon",
+      description:
+        "The Waxing Moon represents growth and increasing expression. What began in darkness begins to take visible form and gather momentum."
+    },
+
+    "full-moon": {
+      number: "03 — FULL MOON",
+      symbol: "○",
+      name: "Full Moon",
+      description:
+        "The Full Moon represents culmination, visibility, and maximum expression. What has been developing reaches its fullest illumination."
+    },
+
+    "waning-moon": {
+      number: "04 — WANING MOON",
+      symbol: "◑",
+      name: "Waning Moon",
+      description:
+        "The Waning Moon represents release, reflection, and integration. The cycle turns inward again as what has reached fullness begins to recede."
+    }
+
+  };
+
+
+  const lunarOverlay =
+    document.getElementById("lunarOverlay");
+
+  const lunarExpandedNumber =
+    document.getElementById("lunarExpandedNumber");
+
+  const lunarExpandedSymbol =
+    document.getElementById("lunarExpandedSymbol");
+
+  const lunarExpandedName =
+    document.getElementById("lunarExpandedName");
+
+  const lunarExpandedDescription =
+    document.getElementById("lunarExpandedDescription");
+
+
+  const lunarCards =
+    document.querySelectorAll(".lunar-phase-card");
+
+
+  const lunarCloseControls =
+    document.querySelectorAll("[data-close-lunar]");
+
+
+  function openLunarPhase(phaseKey) {
+
+    const phase =
+      lunarData[phaseKey];
+
+    if (!phase) return;
+
+
+    lunarExpandedNumber.textContent =
+      phase.number;
+
+    lunarExpandedSymbol.textContent =
+      phase.symbol;
+
+    lunarExpandedName.textContent =
+      phase.name;
+
+    lunarExpandedDescription.textContent =
+      phase.description;
+
+
+    lunarOverlay.hidden = false;
+
+    document.body.style.overflow = "hidden";
+
+  }
+
+
+  function closeLunarPhase() {
+
+    lunarOverlay.hidden = true;
+
+    document.body.style.overflow = "";
+
+  }
+
+
+  lunarCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+      openLunarPhase(
+        card.dataset.phase
+      );
+
+    });
+
+  });
+
+
+  lunarCloseControls.forEach(control => {
+
+    control.addEventListener(
+      "click",
+      closeLunarPhase
+    );
+
+  });
+
+
+  document.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key === "Escape" &&
+        !lunarOverlay.hidden
+      ) {
+
+        closeLunarPhase();
+
+      }
+
+    }
+  );
+
+</script>
+
+</body>
+
+</html>
