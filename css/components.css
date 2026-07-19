@@ -123,3 +123,136 @@ textarea {
     scroll-behavior: auto !important;
   }
 }
+/* ========================================
+   Site Header
+======================================== */
+
+.site-header {
+  width: 100%;
+}
+
+.site-header-inner {
+  width: 100%;
+  max-width: var(--content-wide);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 32px;
+
+  box-sizing: border-box;
+}
+
+.site-logo {
+  color: var(--text);
+  text-decoration: none;
+
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+/* ========================================
+   Site Footer
+======================================== */
+
+.site-footer {
+  width: 100%;
+  margin-top: 96px;
+
+  border-top: 1px solid var(--line);
+}
+
+.site-footer-inner {
+  width: 100%;
+  max-width: var(--content-wide);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+
+  padding: 48px 32px;
+}
+
+.site-footer-brand {
+  max-width: 320px;
+}
+
+.site-footer-brand p {
+  margin-top: 12px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.site-footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.site-footer-nav a {
+  color: var(--muted);
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  transition: color 180ms ease;
+}
+
+.site-footer-nav a:hover {
+  color: var(--text);
+}
+
+.site-footer-bottom {
+  width: 100%;
+  max-width: var(--content-wide);
+  margin: 0 auto;
+
+  padding: 20px 32px;
+
+  border-top: 1px solid var(--line);
+}
+
+.site-footer-bottom p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
