@@ -44,16 +44,6 @@ form.grid4{
   display:grid; grid-template-columns:1fr 1.1fr .8fr 1fr;
   gap:10px;
 }
-.field{ display:flex; flex-direction:column; gap:6px; }
-label{
-  font-family:'Space Mono',monospace; font-size:10px;
-  letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
-}
-select,input{
-  font-family:'Inter',sans-serif; font-size:15px; color:var(--text);
-  background:var(--bg-deep); border:1px solid var(--line);
-  border-radius:10px; padding:11px 10px; width:100%;
-}
 .divider{
   border:none; border-top:1px solid var(--line); margin:20px 0;
 }
