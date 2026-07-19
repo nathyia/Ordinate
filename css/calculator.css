@@ -20,15 +20,11 @@ body{
   max-width: var(--content-narrow);
   padding: 40px 32px;
 }
-.eyebrow{
-  font-family:'Space Mono',monospace; font-size:11px;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin:0 0 14px;
-}
 h1{
   font-family:'Fraunces',serif; font-weight:600; font-size:30px;
   line-height:1.15; margin:0 0 10px;
 }
-.subhead{ font-size:14px; line-height:1.55; color:var(--muted); margin:0 0 28px; }
+.subhead{ margin:0 0 28px; }
 form{
   display:grid; grid-template-columns:1.3fr .8fr 1fr;
   gap:12px; margin-bottom:22px;

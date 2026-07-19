@@ -36,10 +36,6 @@ body{
 .card {
   padding: 36px 30px;
 }
-.eyebrow{
-  font-family:'Space Mono',monospace; font-size:11px;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin:0 0 14px;
-}
 h1{
   font-family:'Fraunces',serif; font-weight:600; font-size:28px;
   line-height:1.15; margin:0 0 10px;
@@ -48,22 +44,12 @@ h2{
   font-family:'Fraunces',serif; font-weight:600; font-size:20px;
   line-height:1.2; margin:26px 0 10px;
 }
-.subhead{ font-size:14px; line-height:1.55; color:var(--muted); margin:0 0 24px; }
+.subhead{ margin:0 0 24px; }
 
 /* form (calculator) */
 form{
   display:grid; grid-template-columns:1.3fr .8fr 1fr;
   gap:12px; margin-bottom:20px;
-}
-.field{ display:flex; flex-direction:column; gap:6px; }
-label{
-  font-family:'Space Mono',monospace; font-size:10px;
-  letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
-}
-select,input{
-  font-family:'Inter',sans-serif; font-size:15px; color:var(--text);
-  background:var(--bg-deep); border:1px solid var(--line);
-  border-radius:10px; padding:11px 10px; width:100%;
 }
 /*
 button.primary{
