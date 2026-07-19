@@ -1,1 +1,582 @@
-<h1>Coming Soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Solar Cycle — Ordinate</title>
+
+  <link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/solar-cycle.css">
+
+</head>
+
+<body>
+
+  <div class="site-shell">
+
+    <header class="site-header">
+
+      <div class="site-header-inner">
+
+        <a href="/" class="site-logo" aria-label="Ordinate home">
+  <img
+    src="../../assets/logo/concept1_orbital_seal.svg"
+    alt=""
+  >
+</a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+
+          <a href="/type/">
+            Find Your Ordinate
+          </a>
+
+          <a href="/compatibility/">
+            Co-Ordinate
+          </a>
+
+          <a href="/forecast/">
+            Cosmic Forecast
+          </a>
+
+          <a href="/field-guide/">
+            Field Guide
+          </a>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+
+    <main>
+
+  <section class="solar-hero">
+
+    <div class="solar-hero-inner">
+
+      <p class="eyebrow">
+        The Solar Cycle
+      </p>
+
+      <h1>
+        Eight points around the Sun.
+      </h1>
+
+      <p>
+        The solar cycle provides the second axis of Ordinate. Eight points along Earth's annual journey around the Sun mark a repeating rhythm of emergence, expansion, culmination, decline, and return.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="solar-points">
+
+    <div class="solar-points-inner">
+
+      <div class="solar-point-grid">
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="spring-equinox"
+        >
+
+          <span class="solar-point-number">
+            01
+          </span>
+
+          <span class="solar-point-symbol">
+            ✦
+          </span>
+
+          <span class="solar-point-name">
+            Spring Equinox
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="first-cross-quarter"
+        >
+
+          <span class="solar-point-number">
+            02
+          </span>
+
+          <span class="solar-point-symbol">
+            ◇
+          </span>
+
+          <span class="solar-point-name">
+            First Cross-Quarter
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="summer-solstice"
+        >
+
+          <span class="solar-point-number">
+            03
+          </span>
+
+          <span class="solar-point-symbol">
+            ☼
+          </span>
+
+          <span class="solar-point-name">
+            Summer Solstice
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="second-cross-quarter"
+        >
+
+          <span class="solar-point-number">
+            04
+          </span>
+
+          <span class="solar-point-symbol">
+            ◇
+          </span>
+
+          <span class="solar-point-name">
+            Second Cross-Quarter
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="autumn-equinox"
+        >
+
+          <span class="solar-point-number">
+            05
+          </span>
+
+          <span class="solar-point-symbol">
+            ✦
+          </span>
+
+          <span class="solar-point-name">
+            Autumn Equinox
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="third-cross-quarter"
+        >
+
+          <span class="solar-point-number">
+            06
+          </span>
+
+          <span class="solar-point-symbol">
+            ◇
+          </span>
+
+          <span class="solar-point-name">
+            Third Cross-Quarter
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="winter-solstice"
+        >
+
+          <span class="solar-point-number">
+            07
+          </span>
+
+          <span class="solar-point-symbol">
+            ❄
+          </span>
+
+          <span class="solar-point-name">
+            Winter Solstice
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+        <button
+          class="solar-point-card"
+          type="button"
+          data-point="fourth-cross-quarter"
+        >
+
+          <span class="solar-point-number">
+            08
+          </span>
+
+          <span class="solar-point-symbol">
+            ◇
+          </span>
+
+          <span class="solar-point-name">
+            Fourth Cross-Quarter
+          </span>
+
+          <span class="solar-point-action">
+            Explore →
+          </span>
+
+        </button>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div
+    class="solar-overlay"
+    id="solarOverlay"
+    hidden
+  >
+
+    <div
+      class="solar-overlay-backdrop"
+      data-close-solar
+    ></div>
+
+
+    <article
+      class="solar-expanded-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="solarExpandedName"
+    >
+
+      <button
+        class="solar-close"
+        type="button"
+        aria-label="Close solar point information"
+        data-close-solar
+      >
+        ×
+      </button>
+
+
+      <p
+        class="eyebrow"
+        id="solarExpandedNumber"
+      ></p>
+
+
+      <div
+        class="solar-expanded-symbol"
+        id="solarExpandedSymbol"
+      ></div>
+
+
+      <h2
+        id="solarExpandedName"
+      ></h2>
+
+
+      <p
+        id="solarExpandedDescription"
+      ></p>
+
+
+      <button
+        class="solar-return"
+        type="button"
+        data-close-solar
+      >
+        ← Return to the Solar Cycle
+      </button>
+
+    </article>
+
+  </div>
+
+</main>
+
+
+    <footer class="site-footer">
+  <div class="site-footer-inner">
+
+    <div class="site-footer-brand">
+
+      <a href="/" class="site-logo">
+        Ordinate
+      </a>
+
+      <p>
+        Mark your place in the cycle.
+      </p>
+
+    </div>
+
+    <nav class="site-footer-nav" aria-label="Footer navigation">
+
+      <a href="/type/">Find Your Ordinate</a>
+
+      <a href="/compatibility/">Co-Ordinate</a>
+
+      <a href="/forecast/">Cosmic Forecast</a>
+
+      <a href="/field-guide/">Field Guide</a>
+
+      <a href="/about/">About</a>
+
+    </nav>
+
+  </div>
+
+  <div class="site-footer-bottom">
+
+    <p>
+      © 2026 Ordinate
+    </p>
+
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+
+  const solarData = {
+
+    "spring-equinox": {
+      number: "01 — SPRING EQUINOX",
+      symbol: "✦",
+      name: "Spring Equinox",
+      description:
+        "The Spring Equinox marks a point of balance between darkness and light. From here, the days continue to lengthen, and the solar cycle turns toward increasing illumination and outward growth."
+    },
+
+    "first-cross-quarter": {
+      number: "02 — FIRST CROSS-QUARTER",
+      symbol: "◇",
+      name: "First Cross-Quarter",
+      description:
+        "The first cross-quarter point marks the transition between the Spring Equinox and Summer Solstice. It represents a season in motion: growth becoming increasingly established and the cycle moving toward fullness."
+    },
+
+    "summer-solstice": {
+      number: "03 — SUMMER SOLSTICE",
+      symbol: "☼",
+      name: "Summer Solstice",
+      description:
+        "The Summer Solstice marks the year's greatest concentration of daylight. It represents culmination, maximum outward expression, and the height of the solar cycle."
+    },
+
+    "second-cross-quarter": {
+      number: "04 — SECOND CROSS-QUARTER",
+      symbol: "◇",
+      name: "Second Cross-Quarter",
+      description:
+        "The second cross-quarter point marks the transition from the height of summer toward the Autumn Equinox. The cycle has passed its peak and begins its gradual turn toward decline and reflection."
+    },
+
+    "autumn-equinox": {
+      number: "05 — AUTUMN EQUINOX",
+      symbol: "✦",
+      name: "Autumn Equinox",
+      description:
+        "The Autumn Equinox marks another point of balance between darkness and light. From here, darkness continues to increase as the solar cycle turns inward toward winter."
+    },
+
+    "third-cross-quarter": {
+      number: "06 — THIRD CROSS-QUARTER",
+      symbol: "◇",
+      name: "Third Cross-Quarter",
+      description:
+        "The third cross-quarter point marks the transition between the Autumn Equinox and Winter Solstice. The cycle continues its movement inward, toward stillness and the year's longest night."
+    },
+
+    "winter-solstice": {
+      number: "07 — WINTER SOLSTICE",
+      symbol: "❄",
+      name: "Winter Solstice",
+      description:
+        "The Winter Solstice marks the year's greatest concentration of darkness. It is the point at which the solar cycle reaches its deepest inward turn before the days begin to lengthen again."
+    },
+
+    "fourth-cross-quarter": {
+      number: "08 — FOURTH CROSS-QUARTER",
+      symbol: "◇",
+      name: "Fourth Cross-Quarter",
+      description:
+        "The fourth cross-quarter point marks the transition from winter toward the Spring Equinox. The cycle begins to emerge from its deepest inward phase and prepares to return to balance."
+    }
+
+  };
+
+
+  const solarOverlay =
+    document.getElementById("solarOverlay");
+
+  const solarExpandedNumber =
+    document.getElementById("solarExpandedNumber");
+
+  const solarExpandedSymbol =
+    document.getElementById("solarExpandedSymbol");
+
+  const solarExpandedName =
+    document.getElementById("solarExpandedName");
+
+  const solarExpandedDescription =
+    document.getElementById("solarExpandedDescription");
+
+
+  const solarCards =
+    document.querySelectorAll(".solar-point-card");
+
+
+  const solarCloseControls =
+    document.querySelectorAll("[data-close-solar]");
+
+
+  function openSolarPoint(pointKey) {
+
+    const point =
+      solarData[pointKey];
+
+    if (!point) return;
+
+
+    solarExpandedNumber.textContent =
+      point.number;
+
+    solarExpandedSymbol.textContent =
+      point.symbol;
+
+    solarExpandedName.textContent =
+      point.name;
+
+    solarExpandedDescription.textContent =
+      point.description;
+
+
+    solarOverlay.hidden = false;
+
+    document.body.style.overflow = "hidden";
+
+  }
+
+
+  function closeSolarPoint() {
+
+    solarOverlay.hidden = true;
+
+    document.body.style.overflow = "";
+
+  }
+
+
+  solarCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+      openSolarPoint(
+        card.dataset.point
+      );
+
+    });
+
+  });
+
+
+  solarCloseControls.forEach(control => {
+
+    control.addEventListener(
+      "click",
+      closeSolarPoint
+    );
+
+  });
+
+
+  document.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key === "Escape" &&
+        !solarOverlay.hidden
+      ) {
+
+        closeSolarPoint();
+
+      }
+
+    }
+  );
+
+</script>
+
+</body>
+
+</html>

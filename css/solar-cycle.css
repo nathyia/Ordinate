@@ -1,0 +1,269 @@
+/* ========================================
+   Solar Cycle Hero
+======================================== */
+
+.solar-hero {
+  padding: 120px 32px 96px;
+  text-align: center;
+}
+
+.solar-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.solar-hero h1 {
+  margin: 16px 0 0;
+
+  color: var(--text);
+
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+
+  font-size: clamp(48px, 8vw, 88px);
+  line-height: 0.95;
+}
+
+.solar-hero p:not(.eyebrow) {
+  max-width: 600px;
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Solar Point Cards
+======================================== */
+
+.solar-points {
+  padding: 0 32px 120px;
+}
+
+.solar-points-inner {
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.solar-point-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.solar-point-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  min-height: 220px;
+  padding: 20px;
+
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+
+  color: var(--text);
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.solar-point-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.solar-point-number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
+.solar-point-symbol {
+  margin-top: 24px;
+
+  font-size: 36px;
+  line-height: 1;
+}
+
+.solar-point-name {
+  margin-top: 16px;
+
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.solar-point-action {
+  margin-top: auto;
+  padding-top: 20px;
+
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ========================================
+   Solar Expanded Overlay
+======================================== */
+
+.solar-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: grid;
+  place-items: center;
+
+  padding: 24px;
+}
+
+.solar-overlay[hidden] {
+  display: none;
+}
+
+.solar-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.solar-expanded-card {
+  position: relative;
+  z-index: 1;
+
+  width: min(100%, 620px);
+  max-height: min(720px, calc(100vh - 48px));
+  overflow-y: auto;
+
+  padding: 48px;
+
+  background: var(--surface);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+}
+
+.solar-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+
+  border: 0;
+  background: none;
+
+  color: var(--muted);
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.solar-close:hover {
+  color: var(--text);
+}
+
+.solar-expanded-symbol {
+  margin-top: 32px;
+
+  font-size: 72px;
+  line-height: 1;
+}
+
+.solar-expanded-card h2 {
+  margin: 24px 0 0;
+
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+
+  font-size: 48px;
+  line-height: 1;
+}
+
+.solar-expanded-card p:not(.eyebrow) {
+  margin: 24px 0 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.solar-return {
+  margin-top: 36px;
+
+  padding: 0;
+
+  border: 0;
+  background: none;
+
+  color: var(--gold);
+
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+/* ========================================
+   Medium Screens
+======================================== */
+
+@media (max-width: 1000px) {
+
+  .solar-point-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ========================================
+   Small Screens
+======================================== */
+
+@media (max-width: 800px) {
+
+  .solar-hero {
+    padding: 72px 20px 64px;
+  }
+
+  .solar-points {
+    padding: 0 20px 72px;
+  }
+
+  .solar-point-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-point-card {
+    min-height: 240px;
+  }
+
+  .solar-expanded-card {
+    padding: 40px 24px;
+  }
+
+  .solar-expanded-card h2 {
+    font-size: 40px;
+  }
+
+}
