@@ -30,7 +30,7 @@ body{
 .tab.active{ background:linear-gradient(135deg,var(--gold-soft),var(--gold)); color:var(--bg-deep); }
 .tab:not(.active):hover{ color:var(--text); }
 
-.view{ display:none; width:100%; max-width:560px; }
+.view{ display:none; width:100%; }
 .view.active{ display:block; }
 
 .card {

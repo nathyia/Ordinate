@@ -16,11 +16,13 @@
 }
 
 .content-narrow {
+  width: 100%;
   max-width: var(--content-narrow);
   margin-inline: auto;
 }
 
 .content-standard {
+  width: 100;
   max-width: var(--content-standard);
   margin-inline: auto;
 }
