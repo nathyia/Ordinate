@@ -248,8 +248,49 @@
   font-weight: 300;
 }
 
+/* ========================================
+   Homepage — Field Guide Invitation
+======================================== */
 
-@media (max-width: 760px) {
+.home-field-guide {
+  padding: 120px 32px;
+  text-align: center;
+}
+
+.home-field-guide-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.home-field-guide h2 {
+  margin: 16px 0 0;
+
+  color: var(--text);
+
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.1;
+}
+
+.home-field-guide p:not(.eyebrow) {
+  max-width: 520px;
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.home-field-guide .button {
+  display: inline-block;
+  margin-top: 36px;
+}
+
+@media (max-width: 800px) {
 
   .home-tools {
     padding: 72px 20px;
@@ -269,6 +310,10 @@
 
   .home-cycle-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-field-guide {
+    padding: 72px 20px;
   }
 
 }
