@@ -1,0 +1,31 @@
+/* =========================================================
+   LAYOUT FOUNDATION
+   ========================================================= */
+
+.page-shell {
+  min-height: 100vh;
+}
+
+   .page-container {
+  width: min(
+    calc(100% - 32px),
+    var(--content-wide)
+  );
+
+  margin-inline: auto;
+}
+
+.content-narrow {
+  max-width: var(--content-narrow);
+  margin-inline: auto;
+}
+
+.content-standard {
+  max-width: var(--content-standard);
+  margin-inline: auto;
+}
+
+.content-wide {
+  max-width: var(--content-wide);
+  margin-inline: auto;
+}
