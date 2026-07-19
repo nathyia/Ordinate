@@ -1,0 +1,138 @@
+/* ========================================
+   Field Guide Hero
+======================================== */
+
+.field-guide-hero {
+  padding: 120px 32px 96px;
+  text-align: center;
+}
+
+.field-guide-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.field-guide-hero h1 {
+  margin: 16px 0 0;
+
+  color: var(--text);
+
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+
+  font-size: clamp(48px, 8vw, 88px);
+  line-height: 0.95;
+}
+
+.field-guide-hero p:not(.eyebrow) {
+  max-width: 560px;
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Field Guide Index
+======================================== */
+
+.field-guide-index {
+  padding: 0 32px 120px;
+}
+
+.field-guide-index-inner {
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.field-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.field-guide-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 300px;
+  padding: 32px;
+
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.field-guide-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.field-guide-card-number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
+.field-guide-card h2 {
+  margin: 48px 0 0;
+
+  color: var(--text);
+
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.field-guide-card p {
+  margin: 16px 0 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.field-guide-card-link {
+  margin-top: auto;
+  padding-top: 28px;
+
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (max-width: 800px) {
+
+  .field-guide-hero {
+    padding: 72px 20px 64px;
+  }
+
+  .field-guide-index {
+    padding: 0 20px 72px;
+  }
+
+  .field-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-guide-card {
+    min-height: auto;
+  }
+
+}
