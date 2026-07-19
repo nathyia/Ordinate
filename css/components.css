@@ -82,7 +82,7 @@ textarea {
   padding: 11px 10px;
 }
 /* =========================
-   Shared Text Components
+   Text Components
    ========================= */
 
 .eyebrow{
@@ -90,3 +90,13 @@ textarea {
   letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin:0 0 14px;
 }
 .subhead{ font-size:14px; line-height:1.55; color:var(--muted); }
+/* =========================
+   Chips
+   ========================= */
+
+.chips{ display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-bottom:22px; }
+.chip{
+  font-family:'Space Mono',monospace; font-size:10px; color:var(--muted);
+  border:1px solid var(--line); border-radius:999px; padding:5px 11px;
+}
+.chip b{ color:var(--text); font-weight:600; }
